@@ -17,19 +17,9 @@ def long_planeteer_calls(planeteer_calls)
 end
 
 def find_valid_calls(planeteer_calls)
-    map = {}
-    dup = nil
-    planeteer_calls.each do |v|
-      map[v] = (map[v] || 0 ) + 1
-
-      if map[v] > 1
-        dup = v
-        break
-      end
-    end
-
-    return dup
-  end
+  valid_calls = ["Earth!", "Wind!", "Fire!", "Water!", "Heart!"]
+planeteer_calls.collect{|c| valid_calls.include?(c)}.include?(&:first)
+end
 
 array2 = [1 ,2, 3, "Wind!", "Fire!"]
 find_valid_calls(array2)
