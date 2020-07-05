@@ -18,7 +18,9 @@ end
 
 def find_valid_calls(planeteer_calls)
   valid_calls = ["Earth!", "Wind!", "Fire!", "Water!", "Heart!"]
-   planeteer_calls & valid_calls.map {|n| n}.shift
+  array1 = []
+  array1 << planeteer_calls & valid_calls 
+  array1.shift
 
 end
 
