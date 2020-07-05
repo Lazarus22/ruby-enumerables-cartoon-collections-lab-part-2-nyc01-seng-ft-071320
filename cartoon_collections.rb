@@ -18,7 +18,9 @@ end
 
 def find_valid_calls(planeteer_calls)
   valid_calls = ["Earth!", "Wind!", "Fire!", "Water!", "Heart!"]
-  planeteer_calls.any? {|n| n.include?(valid_calls)} p n.valid_calls
+  p planeteer_calls & valid_calls
+
+
 
 
   # Use an Enumerable to check if any elements in the passed in array match the valid calls listed above
