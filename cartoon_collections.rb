@@ -21,9 +21,8 @@ def find_valid_calls(planeteer_calls)
   array1 = []
 puts planeteer_calls & valid_calls
 
-
 end
-
+find_valid_calls
 
 
   # Use an Enumerable to check if any elements in the passed in array match the valid calls listed above
