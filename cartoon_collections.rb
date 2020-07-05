@@ -18,8 +18,9 @@ end
 
 def find_valid_calls(planeteer_calls)
   valid_calls = ["Earth!", "Wind!", "Fire!", "Water!", "Heart!"]
-  new_array = []
-  planeteer_calls & valid_calls.map {|n| n}
+   planeteer_calls.any? {|n| n.valid_calls}
+
+  end
 
 end
 
