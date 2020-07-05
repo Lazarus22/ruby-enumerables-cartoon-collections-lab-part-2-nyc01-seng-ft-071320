@@ -22,7 +22,7 @@ def find_valid_calls(planeteer_calls)
 puts planeteer_calls & valid_calls
 
 end
-array2 = [1 ,2, 3, "Wind!" "Fire!"]
+array2 = [1 ,2, 3, "Wind!"]
 find_valid_calls(array2)
 
 
