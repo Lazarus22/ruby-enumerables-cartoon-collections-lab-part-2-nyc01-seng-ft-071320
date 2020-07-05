@@ -19,7 +19,7 @@ end
 def find_valid_calls(planeteer_calls)
   valid_calls = ["Earth!", "Wind!", "Fire!", "Water!", "Heart!"]
   new_array = []
-  planeteer_calls & valid_calls = new_array
+  new_array << planeteer_calls & valid_calls 
   new_array.shift
 end
 
