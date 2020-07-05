@@ -19,7 +19,7 @@ end
 def find_valid_calls(planeteer_calls)
   valid_calls = ["Earth!", "Wind!", "Fire!", "Water!", "Heart!"]
   array1 = []
-{planeteer_calls & valid_calls}.first
+(planeteer_calls & valid_calls).first
 end
 
 array2 = [1 ,2, 3, "Wind!", "Fire!"]
